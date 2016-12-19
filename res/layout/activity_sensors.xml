@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundbot"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/headericon"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="Sensors Tester"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="800dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/backgroundtop"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff" >
+
+            <EditText
+                android:id="@+id/editTextSensor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List of Sensors:"
+                android:textColor="@android:color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Motion Sensor"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="35dp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Sensor 1"
+                        android:textColor="@android:color/white"
+                        android:textSize="35dp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Sensor 2"
+                        android:textColor="@android:color/white"
+                        android:textSize="35dp"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" 
+                    android:weightSum="3" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2" >
+
+                        <CheckBox
+                            android:id="@+id/motion_passed"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="PASS"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/motion_failed"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="FAIL"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                   
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2" >
+
+                        <CheckBox
+                            android:id="@+id/sensor0_passed"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="PASS"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/sensor0_failed"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="FAIL"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="2" >
+
+                        <CheckBox
+                            android:id="@+id/sensor1_passed"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="PASS"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/sensor1_failed"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:text="FAIL"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_blue"
+            android:text="Back"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="35dp" >
+        </Button>
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_blue"
+            android:text="Home"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="35dp" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
